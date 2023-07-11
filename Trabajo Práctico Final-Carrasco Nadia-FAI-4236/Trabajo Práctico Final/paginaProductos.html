@@ -1,0 +1,290 @@
+<html>
+    <head>
+        <title>Artesan&iacute;as Nyx</title>
+      <link rel="stylesheet" href="estilo.css">
+        <script type="text/javascript" src="script0.js" defer></script>   
+        <script type="text/javascript" src="carrito.js" defer></script> 
+    </head>
+        
+    <body>
+        
+            <header class="header">
+                <div id="parteSuperior" class="parteSuperior container">
+                    <div class="menuOpciones">
+                       <img src="IMG/logoOpciones.jpg" id="img-Opciones" alt="opciones"> 
+                       <div id="opciones">
+                        <ul id="masInfoOpciones">
+                            <li id="opcionProductos"><a href="paginaProductos.html">Productos</a></li>
+                            <li id="opcionInicio"><a href="paginaInicio.html">Inicio</a></li>
+                            <li id="opcionContacto"><a href="paginaContactos.html">Contacto</a></li>
+                            <li id="opcionConsultas"><a href="paginaContactos.html#anclaConsulta">Hacer una consulta</a></li>
+                        </ul>
+                       </div>
+                    </div>
+                    
+                    <div id="fotoLogo"></div>
+                    <div class="caja-buscador">
+                        <input type="text" id="buscador" placeholder=" Buscar producto">
+                    </div>
+                    
+    
+                    <div class="menuCarrito">         
+                        <img src="IMG/carrito.jpg" id="img-carrito" alt="carrito">  
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Productos</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="verCompra">Ver compra</a>
+                            <a href="#" id="vaciar-carrito" class="btnVaciar">Vaciar Carrito</a>
+                        </div>
+                    </div>
+               
+                    <nav class="navbar">
+                        <ul id="masInfo">
+                            <li id="opcionProductos"><a href="paginaProductos.html">Productos</a></li>
+                            <li id="opcionInicio"><a href="paginaInicio.html">Inicio</a></li>
+                            <li id="opcionContacto"><a href="paginaContactos.html">Contacto</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+            </header>
+        <div class="productos container" id="container">   
+                
+                    <div id="tusCompras">
+                        <h1> Tus compras </h1>
+                        <div id="listacompras">
+                            
+                        </div>
+                        
+                        <button id="btnRealizarCompra" onclick="location.href='paginaDatosComprador.html'">Realizar compra</button>
+                    </div>
+                    <h1 id="titlePagProductos">Nuestros productos</h1>
+                   
+                    <div class="caja-filtro" id="caja-filtro">
+                        <a href="#" class="boton activo" data-filtro="todo">Todo</a>
+                        <a href="#" class="boton" data-filtro="cenicero">Ceniceros</a>
+                        <a href="#" class="boton" data-filtro="pyc">Porta sahumerio y cenicero</a>
+                        <a href="#" class="boton" data-filtro="promo">Promos</a>
+                    </div>
+
+                    <section class="todosLosProductos" id="productos-tienda">
+                        <div class="producto pyc">
+                            <img src="Fotos Artesanías/HelloKitty.jpg" alt="HelloKitty"/>  
+                            <div class="detalles-producto">    
+                                <h2 id="descrip"> Cenicero y Portasahumerio de Hello Kitty </h2>
+                                        <p>$<span id="precio">1800</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="1">Agregar al carrito</a>    
+                            </div>
+                        </div>
+
+                        <div class="producto pyc">
+                            <img src="Fotos Artesanías/Catman.jpg" alt="Catman"/>
+                            <div class="detalles-producto">
+                                <h2 id="descrip"> Cenicero y Portasahumerio de Catman</h2>
+                                        <p>$<span id="precio">2000</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="2">Agregar al carrito</a>
+                            </div>  
+                        </div>
+
+                        <div class="producto cenicero">
+                            <div class="detalles-producto">
+                                <img src="Fotos Artesanías/HongoMario.jpg" alt="HongoMarioBros"/>
+                                <h2 id="descrip"> Cenicero de Hongo Mario Bros</h2>
+                                        <p>$<span>1800</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="3">Agregar al carrito</a>
+                            </div>
+                           
+                        </div>
+                        <div class="producto pyc">
+                            <div class="detalles-producto">
+                                <img src="Fotos Artesanías/BotellaPsicodelica.jpg" alt="Graffiti"/>
+                                <h2 id="descrip"> Cenicero y Portasahumerio Graffiti</h2>
+                                            <p>$<span>2000</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="4">Agregar al carrito</a>
+                            </div>
+                                
+                        </div>
+                        <div class="producto cenicero">
+                            <img src="Fotos Artesanías/Psicodelico.jpg" alt="Psicodelico"/>
+                            <div class="detalles-producto">
+                                    <h2> Cenicero Psicod&eacute;lico</h2><br>
+                                        <p>$<span>2500</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="5">Agregar al carrito</a>
+                            </div>
+                            
+                        </div>
+                        <div class="producto pyc"> 
+                            <img src="Fotos Artesanías/LaRenga.jpg" alt="LaRenga"/>
+                            <div class="detalles-producto">
+                               <h2>Cenicero y Portasahumerio La Renga</h2>
+                                    <p>$<span>2000</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="6">Agregar al carrito</a>
+                            </div>
+                 
+                        </div>
+                        
+                        <div class="producto pyc">
+                            <img src="Fotos Artesanías/Morodo.jpg" alt="Morodo"/>
+                            <div class="detalles-producto">
+                                <h2> Cenicero y Portasahumerio de Morodo</h2>
+                                    <p>$<span>2500</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="7">Agregar al carrito</a>
+                            </div>
+                            
+                        </div>
+                        <div class="producto pyc">
+                            <img src="Fotos Artesanías/LosRedondos.jpg" alt="LosRedondos"/>
+                            <div class="detalles-producto">
+                                <h2> Cenicero y Portasahumerio de PR</h2>
+                                    <p>$<span>1800</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="8">Agregar al carrito</a>
+                            </div>
+                            
+                        </div>
+                        <div class="producto pyc">
+                            <img src="Fotos Artesanías/ViejasLocas.jpg" alt="ViejasLocas"/>
+                            <div class="detalles-producto">
+                                <h2> Cenicero y Portasahumerio de Viejas Locas</h2>
+                                    <p>$<span>2000</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="9">Agregar al carrito</a>
+                            </div>
+                            
+                        </div>
+                        <div class="producto pyc">
+                            <img src="Fotos Artesanías/CorazonAzul.jpg" alt="CorazonAzul"/>
+                            <div class="detalles-producto">
+                               <h2> Cenicero y Portasahumerio de Coraz&oacute;n</h2>
+                                <p>$<span>1800</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a id="botonCarrito" class="agregar-carrito" data-id="10">Agregar al carrito</a> 
+                            </div>
+                            
+                        </div>
+                        <div class="producto pyc">
+                            <img src="Fotos Artesanías/Honguito.jpg" alt="Honguito"/>
+                            <div class="detalles-producto">
+                                <h2> Cenicero y Portasahumerio de Hongo</h2>
+                                    <p>$<span>1800</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#"  id="botonCarrito" class="agregar-carrito" data-id="11">Agregar al carrito</a>
+                            </div>
+                            
+                        </div>
+                        <div class="producto cenicero">
+                            <img src="Fotos Artesanías/CorazonRosa.jpg" alt="CorazonRosa"/>
+                            <div class="detalles-producto">
+                                <h2> Cenicero de Coraz&oacute;n Rosa</h2><br>
+                                    <p>$<span>1600</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="12">Agregar al carrito</a>
+                            </div>
+                            
+                        </div>
+                        <div class="producto promo">
+                            <img src="Fotos Artesanías/Promo1.jpg" alt="Promo1"/>
+                            <div class="detalles-producto">
+                                 <h2> PROMO Ceniceros y Portasahumerio x3</h2>
+                                    <p>$<span>4700</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="13">Agregar al carrito</a>
+                            </div>
+                           
+                        </div>
+                        <div class="producto pyc">
+                            <img src="Fotos Artesanías/EspiralArcoiris.jpg" alt="EspiralArcoiris"/>
+                            <div class="detalles-producto">
+                               <h2>Cenicero y Portasahumerio Espiral Colors </h2>
+                                        <p>$<span>1800</span></p>
+                                    <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                    <a href="#" id="botonCarrito" class="agregar-carrito" data-id="14">Agregar al carrito</a> 
+                            </div>
+                            
+                        </div>
+                        <div class="producto promo">
+                            <img src="Fotos Artesanías/Promo2.jpg" alt="Promo2"/>
+                            <div class="detalles-producto">
+                                <h2><u>PROMO</u> Ceniceros y Portasahumerio</h2>
+                                    <p>$<span>4600</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="15">Agregar al carrito</a>
+                            </div>
+                            
+                        </div>
+                        <div class="producto promo">
+                            <img src="Fotos Artesanías/Promo3.jpg" alt="Promo3"/>
+                            <div class="detalles-producto">
+                                 <h2><u>PROMO</u> Ceniceros y Portasahumerio x3 </h2>
+                                    <p>$<span>4700</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="16">Agregar al carrito</a>
+                            </div>
+                           
+                        </div>
+                        <div class="producto pyc">
+                            <img src="Fotos Artesanías/Ranita.jpg" alt="Ranita"/>
+                            <div class="detalles-producto">
+                                <h2> Cenicero y Portasahumerio de Ranita </h2>
+                                    <p>$<span>2200</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="17">Agregar al carrito</a>
+                            </div>
+                    
+                        </div>
+                        <div class="producto promo">
+                            <img src="Fotos Artesanías/Promo4.jpg" alt="Promo4"/>
+                            <div class="detalles-producto">
+                               <h2><u>PROMO</u> Ceniceros y Portasahumerio x2 </h2>
+                                <p>$<span>3200</span></p>
+                                <button type="submit" onclick="location.href='paginaDatosComprador.html'" id="botonComprar">Comprar ahora</button>
+                                <a href="#" id="botonCarrito" class="agregar-carrito" data-id="18">Agregar al carrito</a>  
+                            </div>
+                           
+                        </div>
+                    </section>
+                   <section id="foot">
+                        <div id="ubic">
+                                <img src="IMG/logoUbicacion.png" alt="ubicacion">
+                                <p><u>Ciudad:</u> Cipolletti<br><u>Calle:</u> Tres Arroyos 35</p>
+                        </div>
+
+                        <div id="footRedes">
+                            <h3>Nuestras Redes</h3>
+                            <a href="https://www.instagram.com/nyx.crazy.fantasies/" target="_blank" alt="instagram"><img src="IMG/logoInstagram.png"></a>
+                            <a href="#"><img src="IMG/mail.png" alt="mail"  target="_blank"></a>
+                            <a href="#"><img src="IMG/logoFacebook.jpg" alt="facebook" target="_blank" > </a>
+                        </div>
+
+                        <div id="footContacto">
+                            <h3>Contacto</h3>
+                            <div id="fCelu">
+                                <img src="IMG/celu.png"></img>
+                            </div>
+                            <p><u>2995168242</u></p>
+                        </div>
+                        
+                       
+                        <div id="foot2">
+                            <div id="footNombrePagina">
+                                <p>&#169; Artesan&iacute;as NYX</p>
+                            </div>
+                        </div>    
+                   </section>   
+        </div>
+    </body>
+</html>

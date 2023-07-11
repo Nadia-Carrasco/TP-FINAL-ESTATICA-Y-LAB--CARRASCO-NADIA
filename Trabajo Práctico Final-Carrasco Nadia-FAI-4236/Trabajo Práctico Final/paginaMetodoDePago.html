@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Artesan&iacute;as Nyx</title>
+      <link rel="stylesheet" href="estilo.css">
+        <script type="text/javascript" src="script0.js" defer></script>   </head>
+    <body>
+        
+            <header class="header">
+                <div id="parteSuperior" class="parteSuperior container">
+
+                    <div class="menuOpciones">
+                       <img src="IMG/logoOpciones.jpg" id="img-Opciones" alt="opciones"> 
+                       <div id="opciones">
+                        <ul id="masInfoOpciones">
+                            <li id="opcionProductos"><a href="paginaProductos.html">Productos</a></li>
+                            <li id="opcionInicio"><a href="paginaInicio.html">Inicio</a></li>
+                            <li id="opcionContacto"><a href="paginaContactos.html">Contacto</a></li>
+                            <li id="opcionConsultas"><a href="paginaContactos.html#anclaConsulta">Hacer una consulta</a></li>
+                        </ul>
+                       </div>
+                    </div>
+                    <div id="fotoLogo"></div>
+                   <div id="pago">
+                    <h1>M&eacute;todo de pago</h1>
+                </div> 
+                </div>
+                
+            </header>
+            <div class="container" id="container">
+                <section class="datos-tarjeta" id="datos-tarjeta">
+                    <h1>Datos de la tarjeta</h1>
+                    <form id="formularioDatosTarjeta">
+                        <label for="metodoDePago">Tipo Tarjeta </label>
+                        <select id="opcionPago">
+                            <option value=""></option>
+                            <option value="debito">D&eacute;bito</option>
+                            <option value="credito">Cr&eacute;dito</option>
+                        </select>
+                       
+                        <label for="numeroTarjeta" id="numeroTarjeta">N&uacute;mero de tarjeta</label>
+                        <input type="text" id="numtarjeta1"><input type="text" id="numtarjeta2">
+                        <input type="text" id="numtarjeta3">
+                        <input type="text" id="numtarjeta4"><br><br><br>
+                        <label for="codigoTarjeta" id="codigo">C&oacute;digo</label>
+                        <input type="text" id="codigoTarjeta">
+                        <label for="fecha_nacimiento">Fecha de vemcimiento:</label>
+                        
+                          <input type="text" id="Vdia" name="dia" placeholder="D&iacute;a" >  
+                          <input type="text" id="Vmes" name="mes" placeholder="Mes" > 
+                          <input type="text" id="Vanio" name="anio" placeholder="A&ntilde;o" >
+                        
+                        <label for="dniTarjeta">N&uacute;mero de documento</label>
+                        <input type="text" id="dniTarjeta">
+                        <label for="nombreTitular">Nombre del titular </label>
+                        <input type="text" id="nombreTitular" placeholder="como figura en la tarjeta"> 
+                        <button id="validarDatosTarjeta" onclick="validarTarjeta();">Validar datos</button>
+                    </form>
+                   
+                    <button id="confirmarCompra" onclick="confirmarCompra();">Confirmar compra</button>
+                </section>
+                <div id="mensajeConfirmacion">
+                    <h1>COMPRA CONFIRMADA</h1>
+                    <p>Muchas gracias por elegirnos</p>
+                </div>
+
+                <section id="foot">
+                    <div id="ubic">
+                        <img src="IMG/logoUbicacion.png" alt="ubicacion">
+                        <p><u>Ciudad:</u> Cipolletti<br><u>Calle:</u> Tres Arroyos 35</p>
+                    </div>
+
+                    <div id="footRedes">
+                        <h3>Nuestras Redes</h3>
+                        <a href="https://www.instagram.com/nyx.crazy.fantasies/" target="_blank" alt="instagram"><img src="IMG/logoInstagram.png"></a>
+                        <a href="#"><img src="IMG/mail.png" alt="mail"  target="_blank"></a>
+                        <a href="#"><img src="IMG/logoFacebook.jpg" alt="facebook" target="_blank" > </a>
+                    </div>
+
+                    <div id="footContacto">
+                        <h3>Contacto</h3>
+                        <div id="fCelu">
+                            <img src="IMG/celu.png"></img>
+                        </div>
+                        <p><u>2995168242</u></p>
+                    </div>
+                
+               
+                    <div id="foot2">
+                        <div id="footNombrePagina">
+                            <p>&#169; Artesan&iacute;as NYX</p>
+                        </div>
+                    </div>  
+    
+                </section> 
+            </div>
+        </body>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              // Captura el formulario por su ID
+              var form = document.getElementById('formularioDatosTarjeta');
+          
+              // Agrega un controlador de eventos para el evento 'submit'
+              form.addEventListener('submit', function(event) {
+                // Evita que el formulario se envíe
+                event.preventDefault();
+              });
+            });
+          </script>
+    </html>

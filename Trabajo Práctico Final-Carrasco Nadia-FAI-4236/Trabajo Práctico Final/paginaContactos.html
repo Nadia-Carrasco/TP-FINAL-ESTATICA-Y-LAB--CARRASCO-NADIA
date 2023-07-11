@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Contactos</title>
+      <link rel="stylesheet" href="estilo.css">
+        <script type="text/javascript" src="script0.js" defer></script>   </head>
+    <body>
+        
+            <header class="header">
+                <div id="parteSuperior" class="parteSuperior container">
+                    <div class="menuOpciones">
+                        <img src="IMG/logoOpciones.jpg" id="img-Opciones" alt="opciones"> 
+                        <div id="opciones">
+                         <ul id="masInfoOpciones">
+                             <li id="opcionProductos"><a href="paginaProductos.html">Productos</a></li>
+                             <li id="opcionInicio"><a href="paginaInicio.html">Inicio</a></li>
+                             <li id="opcionContacto"><a href="paginaContactos.html">Contacto</a></li>
+                             <li id="opcionConsultas"><a href="paginaContactos.html#anclaConsulta">Hacer una consulta</a></li>
+                         </ul>
+                        </div>
+                     </div>
+                    <div id="fotoLogo"></div>   
+                    <nav class="navbar">
+                        <ul id="masInfo">
+                            <li id="opcionProductos"><a href="paginaProductos.html">Productos</a></li>
+                            <li id="opcionInicio"><a href="paginaInicio.html">Inicio</a></li>
+                            <li id="opcionContacto"><a href="paginaContactos.html">Contacto</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+            </header>
+        <div class="container" id="container">
+            <section class="nuestrosContactos">
+
+            
+                <div id="contactos">
+                    <h2>Cont&aacute;ctanos </h2>
+
+                
+                    <div id="celu">
+                    <img src="IMG/celu.png" alt="celu">
+                   <p><i><u>2995168422</u></i> </p>
+                </div>
+                <div id="mail">
+                    <img src="IMG/mail.png" alt="mail">
+                    <a href="#"><p> nyx_art@gmail.com</p> </a>
+                </div>
+    
+                <div id="instagram" >
+                    <img src="img/logoInstagram.png" alt="instagram">
+                    <p><a href="https://www.instagram.com/nyx.crazy.fantasies/" target="_blank">@nyx.crazy.fantasies</a> </p>
+                </div>
+                <div id="ubicacion">
+                    <img src="img/logoUbicacion.png" alt="ubicacion">
+                    <p> Calle: Tres Arroyos<br>Ciudad: Cipolletti</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.129129099795!2d-67.9939432245751!3d-38.943878299467315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a30f8654b69df%3A0xc430396ff7f87664!2sCCC!5e0!3m2!1sen!2sar!4v1686524224396!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                </div>
+                <a name="anclaConsulta"></a>
+                <section id="consultas">
+                    <p>Hola! Estamos dispuestos a ayudarte, dejanos tu consulta y estaremos contact&aacute;ndote</p>
+                    <form id="formulario">
+                        <label for="nombreConsulta">Tu nombre (requerido) </label><br>
+                        <input type="text" id="nombreConsulta"><br><br>
+                        <div id="respNombre"></div>
+                        <label for="correoConsulta">Tu correo electr&oacute;nico (requerido) </label><br>
+                        <div id="respCorreo"></div>
+                        <input type="text" id="correoConsulta"><br><br>
+                        <label for="asuntoConsulta">Asunto</label><br>
+                        <input type="text" id="asuntoConsulta"><br><br>
+                        <label for="consultaCliente">Tu consulta</label><br>
+                        <textarea cols="50" rows="10" id="consultaCliente"></textarea><br><br>
+                        <div id="respConsulta"></div><br>
+                        <input type="submit" value="Enviar"  onclick="return validarConsulta();">
+                    
+                    </form>
+                </section>
+            </section>
+            <section id="foot">
+                <div id="ubic">
+                    <img src="IMG/logoUbicacion.png" alt="ubicacion">
+                    <p><u>Ciudad:</u> Cipolletti<br><u>Calle:</u> Tres Arroyos 35</p>
+                </div>
+
+                <div id="footRedes">
+                    <h3>Nuestras Redes</h3>
+                    <a href="https://www.instagram.com/nyx.crazy.fantasies/" target="_blank" alt="instagram"><img src="IMG/logoInstagram.png"></a>
+                    <a href="#"><img src="IMG/mail.png" alt="mail"  target="_blank"></a>
+                    <a href="#"><img src="IMG/logoFacebook.jpg" alt="facebook" target="_blank" > </a>
+                </div>
+
+                <div id="footContacto">
+                    <h3>Contacto</h3>
+                    <div id="fCelu">
+                        <img src="IMG/celu.png"></img>
+                    </div>
+                    <p><u>2995168242</u></p>
+                </div>
+            
+           
+                <div id="foot2">
+                    <div id="footNombrePagina">
+                        <p>&#169; Artesan&iacute;as NYX</p>
+                    </div>
+                </div>  
+
+            </section> 
+        </div>
+           
+
+        
+    </body>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Captura el formulario por su ID
+      var form = document.getElementById('formulario');
+  
+      // Agrega un controlador de eventos para el evento 'submit'
+      form.addEventListener('submit', function(event) {
+        // Evita que el formulario se envíe
+        event.preventDefault();
+      });
+    });
+  </script>
+</html>
